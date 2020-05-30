@@ -16,8 +16,9 @@ function App() {
 					<header>
 						<Navigation />
 					</header>
-					<FloatingActiveButton/>
+					<div className="homeDiv">
 					<Home/>
+					</div>
 				</div>
 			</Router>
 	);

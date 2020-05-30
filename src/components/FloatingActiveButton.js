@@ -22,15 +22,15 @@ const FloatingActiveButton = () => {
                             </div>
                         </li>
                         <li>
-                            <span className="fab-label ">Hobbies</span>
-                            <div className="fab-icon-holder 3">
-                                <i className="fas fa-futbol"></i>
-                            </div>
-                        </li>
-                        <li>
                             <span className="fab-label ">Experienec</span>
                             <div className="fab-icon-holder ">
                                 <i className="fas fa-briefcase"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <span className="fab-label ">Hobbies</span>
+                            <div className="fab-icon-holder 3">
+                                <i className="fas fa-futbol"></i>
                             </div>
                         </li>
                         <li>

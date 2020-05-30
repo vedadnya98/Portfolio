@@ -17,38 +17,56 @@ const Projects = () => {
 			}
 		}
 		getData();
-    }, [])
+    }, [data])
     if(!loading){
                 return(
                     <div className="projects">
-                    <h2>Projects</h2>
+                    <div className="sectionTitle">
+                    <p>Projects</p>
                     <br></br>
                     <br></br>
-                    <div className="row">
+                    <br></br>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <div className="row contentDiv">
                     {projects ? projects.map((item , i) => {
 				    return (
                     <div key={i+"Project"} className='col-sm-12 col-md-6 col-lg-4'>
-                    <div className="card promoting-card">
-                    <div class="card-image">    
-                        <img className="card-img-top" src={item.img} alt="Card image cap"/>
-                    </div>
-                        <div className="container">
-                            <h3 className="card-title">item.title</h3>
-                            <p className="card-text">item.description</p>
-                            <h5 className="card-title">Technologies</h5>
-                        {item.technologies ? item.technologies.map((tech , t) => {
-				         return (
-                                    <ul key={t+"Technology"} className="list-group list-group-flush">
-                                        <li className="list-group-item">{tech}</li>
-                                    </ul>
-                         )}):<p></p>}
-                        <h5 className="card-title">Frameworks</h5>
-                        {item.frameworks ? item.frameworks.map((framework , f) => {
-                        return (
-                                <ul key={f+"Framework"} className="list-group list-group-flush">
-                                    <li className="list-group-item">{framework}</li>
-                                </ul>
-                        )}):<p></p>}
+                    <div class="card">
+                        <div class="project-card">
+                            <div class="card-image">
+                                <img src={item.img} alt="Avatar"/>
+                                <br></br>
+                                <br></br>
+                                <br></br>
+                                <h3 className="card-title">{item.title}</h3>
+                            </div>
+                            <div class="project-card-back">
+                            <div className="container">
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <div class="card-description">{item.description}</div>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            {item.code?(<a href= {item.code} className="btn">Code <i className="fas fa-chevron-circle-right"></i></a>):<p></p>}
+                            {item.live?(<a href= {item.live} className="btn">Visit <i className="fas fa-chevron-circle-right"></i></a>):<p></p>}
+                        
+                            {/* <h5 className="card-title">Technologies</h5>
+                            {item.technologies ? item.technologies.map((tech , t) => {
+                            return (
+                                        <button key={t+"Technology"} className="listButton">{tech}</button>
+                            )}):<p></p>}
+                            <h5 className="card-title">Frameworks</h5>
+                            {item.frameworks ? item.frameworks.map((framework , f) => {
+                            return (
+                                    <button key={f+"Framework"} className="listButton">{framework}</button>
+                            )}):<p></p>} */}
+                            </div>
+                            </div>
                         </div>
                     </div>
                     </div>

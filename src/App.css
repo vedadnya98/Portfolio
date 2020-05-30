@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Muli&family=Permanent+Marker&family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Sarpanch:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
 html{
   background-color: #FFFFFF;
-  font-family: 'Muli', sans-serif;
-}
-
-body{
-  font-family: 'Muli', sans-serif;
 }
 
 .App {
+  font-family: 'Jura', sans-serif;
   text-align: center;
-  font-family: 'Muli', sans-serif;
 }
 
 .App-logo {
@@ -35,53 +32,122 @@ body{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 
 /* Navigation */
 
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0170FF;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.footerToolbar{
+  align-items: center;
+  align-items: center;
+}
+
+
 .navbar{
+  z-index: 1030;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
   color: #FFFFFF;
-  background-color: #2F76C0;
+  background-color: #0170FF;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .navbar-brand{
   color: #FFFFFF;
-  opacity: 0.9;
+  padding: 0;
+  margin-left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .navbar-brand:hover{
-  color: #2F76C0;
+  color: #0170FF;
   opacity: 1;
 }
 
 .btn
 {
 background: #FFFFFF;
+font-family: 'Teko', sans-serif;
+font-size: 1.2rem;
+width: 7rem;
 margin-top : 10px;
 margin-bottom: 10px;
 margin-left: 20px;
-color: #2F76C0;
+color: #0170FF !important;
 font-weight: bold;
 border-radius: 1.0rem;
 border: 2px solid transparent;
 }
 .btn:hover
 {
-background: #2F76C0;
+background: #0170FF;
 font-weight: bold;
-color: #FFFFFF;
-border: 2px solid #2F76C0;
+color: #FFFFFF !important;
+border: 2px solid #0170FF;
 border-bottom: 2px solid #FFFFFF;
+}
+
+.navImg{
+  margin-top : 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navImgBig{
+  margin-top : 12px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.modal-title{
+  align-content: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+}
+
+
+
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 100%;
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 10rem);
+    overflow-y: scroll;
+}
+
+.iframe{
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
 }
 
 /* Floating Active Button */
 
 .fab-container{
   position: fixed;
-  bottom: 50px;
+  bottom: 70px;
   right: 50px;
   z-index: 999;
 }
@@ -90,8 +156,8 @@ border-bottom: 2px solid #FFFFFF;
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background: #2F76C0;
-  border: 2px solid #2F76C0;
+  background: #0170FF;
+  border: 2px solid #0170FF;
   opacity: 0.9;
   cursor: pointer;
 }
@@ -167,11 +233,15 @@ border-bottom: 2px solid #FFFFFF;
   font-size: 16px;
   width: 100px;
   background:  #ffffff;
-  color: #2F76C0;;
+  color: #0170FF;;
   margin-right: 10px;
 }
 
 /* Home Page */
+
+.homeDiv{
+  margin-top: 8rem;
+}
 
 .profileImg{
   display: block;
@@ -200,59 +270,202 @@ border-bottom: 2px solid #FFFFFF;
   opacity:0;
 }
 
-.introName{
-  font-family: 'Sedgwick Ave', cursive;
+.introName h1{
+  font-size: 4rem;
+  font-family: 'Teko', sans-serif;
+}
+
+.vectorDiv{
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+
+.vectorImg{
+  height: 15rem;
+  max-width: 100%;
+}
+
+.sectionTitle{
+  background-color: #0170FF;
+  padding: 10rem;
+  font-size: 4rem;
+  line-height: 1rem;
+  font-family: 'Teko', sans-serif;
 }
 
 
 /* Project Component */
 
-.card{
+.projects{
+  margin-top : -0.15rem;
+  align-items: center;
+}
+
+
+.contentDiv{
+  margin: auto;
+  margin-top: -10rem;
+}
+
+
+card-description{
+  color: #FFFFFF;
+  font-size: 1rem;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+
+
+.card {
+    height: 25rem;
+    width: 25rem;
     display: inline-block;
     position: relative;
-    width: 100%;
-    margin-bottom: 50px;
-    border-radius: 6px;
-    color: rgba(0, 0, 0, 0.87);
-    background: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 2rem;
+    perspective: 100rem;
+    border-radius: 0%;
+    border: 0rem;
+    background: transparent;
 }
 
 .card-image {
-  height: 18rem;
-  position: relative;
+  height: 20rem;
+  width: 25rem;
+  background: #FFFFFF;
   overflow: hidden;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: -30px;
-  border-radius: 6px;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
-.card-img-top{
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    pointer-events: none;
+.card-image img{
+  margin-top: 3rem;
+  height: 10rem;
+  max-width: 25rem;
+  background: #FFFFFF;
 }
 
-.projects{
-  background: #2F76C0;
+.project-card {
+  background-size: cover;
+  position: relative;
+  height: 20rem;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  
 }
+
+.btn
+{
+background: #FFFFFF;
+font-family: 'Teko', sans-serif;
+font-size: 1.2rem;
+width: 7rem;
+margin-top : 10px;
+margin-bottom: 10px;
+margin-left: 20px;
+margin-right: 20px;
+color: #0170FF !important;
+font-weight: bold;
+border-radius: 1.0rem;
+border: 2px solid transparent;
+}
+.btn:hover
+{
+background: #0170FF;
+font-weight: bold;
+color: #FFFFFF !important;
+border: 2px solid #0170FF;
+border-bottom: 2px solid #FFFFFF;
+}
+
+.project-card h3{
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+}
+
+.card:hover .project-card {
+  transform: rotateY(180deg);
+}
+
+.card-image, .project-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.project-card-back {
+  color: #FFFFFF;
+  background-color: #0170FF;
+  font-size: 1rem;
+  vertical-align: middle;
+  transform: rotateY(180deg);
+}
+
+.listButton
+{
+background: #0170FF;
+width: 7rem;
+margin: 0.5rem;
+color: #FFFFFF;
+font-weight: bold;
+border-radius: 1.0rem;
+border: 2px solid transparent;
+}
+.listButton:hover
+{
+background: #FFFFFF;
+font-weight: bold;
+color: #0170FF;
+border: 2px solid #0170FF;
+}
+
+
 
 
 /* Education Component */
 
+.eduContainer{
+  margin-top: 0rem;
+}
+
+.education h3{
+  font-size: 2rem;
+  font-family: 'Teko', sans-serif;
+}
+
+.card-caption{
+  color:#000000
+}
+
+.card-caption:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .card-profile {
-  margin-top: 30px;
   text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-avatar {
-  max-width: 130px;
-  max-height: 130px;
+  width: 11rem;
+  height: 11rem;
   margin: -50px auto 0;
   border-radius: 50%;
+  background: #FFFFFF;
   overflow: hidden;
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
@@ -263,4 +476,168 @@ border-bottom: 2px solid #FFFFFF;
 
 .card .table {
   padding: 15px 30px;
+}
+
+.eduImg{
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 11rem;
+}
+
+.gpa{
+    position: relative;
+    line-height: 0;
+    margin: 15px 0;
+    color: #f44336;
+}
+
+/* Experience Component */
+
+.experience{
+  margin-bottom: 3rem;
+}
+
+.experienceDiv{
+  background-color: #FFFFFF;
+  margin-top: -10rem;
+  border-radius: 0.5%;
+  padding-top: 5rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.experienceDiv h3{
+  font-size: 2rem;
+  font-family: 'Teko', sans-serif;
+}
+
+.experienceDiv h4{
+  font-size: 1.5rem;
+  font-family: 'Teko', sans-serif;
+}
+
+.expTextDiv{
+  align-items : flex-start;
+  text-align: left;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.expTextDivLast{
+  align-items : flex-start;
+  text-align: left;
+}
+
+.expText{
+  text-align: left;
+}
+
+.expImage{
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 5rem;
+}
+
+
+/* Skills Component */
+
+.skills{
+  background-color: #FFFFFF;
+  margin-top: -10rem;
+  border-radius: 0.5%;
+  padding-top: 2rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.progress{
+  margin: 2rem;
+}
+
+.progress-bar{
+  width : 0;
+  transition: all ease 0.5s;
+}
+
+.languages{
+  margin: 3rem;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #D3D3D3;
+}
+
+.frameworks{
+  margin : 3rem;
+  padding-bottom: 5rem;
+}
+
+.languages h3{
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.frameworks h3{
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.languages h5{
+  font-family: 'Teko', sans-serif;
+  font-size: 1rem;
+  text-align: left !important;
+  padding-left: 2rem;
+}
+
+.frameworks h5{
+  font-family: 'Teko', sans-serif;
+  font-size: 1rem;
+  text-align: left !important;
+  padding-left: 2rem;
+}
+
+/* Contact Component */
+
+.contact{
+  background-color: #FFFFFF;
+  margin-top: -10rem;
+  border-radius: 0.5%;
+  padding-top: 2rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 10rem;
+}
+
+.btnContact
+{
+font-family: 'Teko', sans-serif;
+font-size: 1.2rem;
+background: #0170FF;
+width: 7rem;
+margin-top : 10px;
+margin-bottom: 10px;
+margin-left: 20px;
+color: #FFFFFF !important;
+font-weight: bold;
+border-radius: 1.0rem;
+border: 2px solid transparent;
+}
+
+.btnContact:hover
+{
+background: #FFFFFF;
+font-weight: bold;
+color: #0170FF !important;
+border: 2px solid #FFFFFF;
+border-bottom: 2px solid #0170FF;
+}
+
+.contactImageDiv img{
+  width: auto;
+  height: 20rem;
+  margin-top: 5rem;
+  vertical-align: middle;
+}
+
+.form-group label{
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5rem;
 }
