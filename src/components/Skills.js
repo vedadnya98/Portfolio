@@ -1,4 +1,6 @@
 import React , {useState , useEffect} from 'react';
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import '../App.css'
 import 'firebase/firestore';
 import { getSkills } from '../firebase/FirestoreFunctions'
@@ -35,51 +37,68 @@ const Skills = () => {
                             <div id="skills" className="skills container">
                             <div className="languages">
                             <h3>Scripting and Programming Languages</h3>
+                            <div className="row">
                             {Object.keys(languages).map((key , i) => {
-                                    let style = {
-                                        width:languages[key][0]
-                                    }
                                         return(
                                             <div key={"languages"+i}>
-                                            <div className="row">
-                                            <div className="skillName col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                                            <div className="skillLogo">
-                                                <img src={languages[key][1]} alt="languageLogo"/>
-                                            </div>
-                                            <h5>{key}</h5>
-                                            </div>
-                                            <div className="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
-                                            <div className="progress">
-                                                <div className="progress-bar" role="progressbar" style={style} aria-valuenow={languages[key][0]} aria-valuemin="0" aria-valuemax="100">{languages[key][0]}</div>
-                                            </div>
-                                            </div>
-                                            </div>
+                                             <div className="skillItem col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                                    <div className="circleSkills">
+                                                        <CircularProgressbarWithChildren value={languages[key][0]} strokeWidth={17}
+                                                        styles={{
+                                                            root: {},
+                                                            path: {
+                                                                    stroke: `#0470FF`,
+                                                                    strokeLinecap: 'butt',
+                                                            },
+                                                            background: {
+                                                            fill: '#FFFFFF',
+                                                            },
+                                                        }}
+                                                        >
+                                                                <div className="skillLogo">
+                                                                    <img src={languages[key][1]} alt="languageLogo"/>
+                                                                </div>
+                                                        </CircularProgressbarWithChildren>
+                                                    </div>
+                                                    <h5>{languages[key][0]} %</h5>
+                                                    <h6>{key}</h6>
+                                             </div>
                                             </div>
                                         )})}
+                                    </div>              
                             </div>
                             <div className="frameworks">
                             <h3>Frameworks and Technologies</h3>
+                            <div className="row">
                                 {Object.keys(frameworks).map((key , i) => {
-                                    let style = {
-                                        width:frameworks[key][0]
-                                    }
                                     return(
                                         <div key={"frameworks"+i}>
-                                            <div className="row">
-                                            <div className="skillName col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                                            <div className="skillLogo">
-                                                <img src={frameworks[key][1]} alt="frameworkLogo"/>
-                                            </div>
-                                            <h5>{key}</h5>
-                                            </div>
-                                            <div className="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
-                                            <div className="progress">
-                                                <div className="progress-bar" style={style} role="progressbar" aria-valuenow={frameworks[key][0]} aria-valuemin="0" aria-valuemax="100">{frameworks[key][0]}</div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
+                                                <div className="skillItem col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+                                                    <div className="circleSkills">
+                                                        <CircularProgressbarWithChildren value={frameworks[key][0]} strokeWidth={17}
+                                                        styles={{
+                                                            root: {},
+                                                            path: {
+                                                                    stroke: `#0470FF`,
+                                                                    strokeLinecap: 'butt',
+                                                            },
+                                                            background: {
+                                                            fill: '#FFFFFF',
+                                                            },
+                                                        }}
+                                                        >
+                                                                <div className="skillLogo">
+                                                                    <img src={frameworks[key][1]} alt="languageLogo"/>
+                                                                </div>
+                                                        </CircularProgressbarWithChildren>
+                                                    </div>
+                                                    <h5>{frameworks[key][0]} %</h5>
+                                                    <h6>{key}</h6>
+
+                                             </div>
+                                        </div>
                                     )})}
+                                    </div>
                                     </div>
                                     </div>
                             </div>

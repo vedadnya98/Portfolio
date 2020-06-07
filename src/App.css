@@ -517,7 +517,6 @@ display: block;
   font-size: 3rem;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
-  font-variant: small-caps;
   align-items: center !important;
   place-content: center !important;
 }
@@ -533,6 +532,7 @@ display: block;
   font-family: 'Montserrat', sans-serif;
   animation: type 1.5s steps(18);
   overflow: hidden;
+  font-variant: small-caps;
   white-space: nowrap;
 }
 
@@ -870,6 +870,53 @@ border: 2px solid #0470FF;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
+.skills .row{
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.skillItem{
+  transition: all 0.1s ease;
+  text-align: center;
+}
+
+.skillItem:hover{
+  transform-origin: center center;
+  transform: scale(1.2);
+}
+
+.skillItem h6{
+  width: 8rem;
+  vertical-align: middle !important;
+  place-content: center;
+  align-content: center;
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  margin-top: -1.2rem;
+  font-size: 1rem;
+  opacity: 1;
+}
+
+.skillItem h5{
+  width: 8rem;
+  vertical-align: middle !important;
+  place-content: center;
+  align-content: center;
+  font-family: 'Muli', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  opacity: 0;
+}
+
+.skillItem:hover h5{
+  opacity: 1;
+}
+
+.skillItem:hover h6{
+  opacity: 0;
+}
+
 .skillName{
   vertical-align: middle !important;
   place-content: center;
@@ -878,15 +925,15 @@ border: 2px solid #0470FF;
 
 
 .skillLogo{
-  width: 3rem;
+  width: 100%;
   height: 3rem;
-  align-items: center;
-  place-content: center;
+  align-items: center !important;
+  place-content: center !important;
 }
 
 .skillLogo img{
-  width: 100%;
   height: 100%;
+  width: auto;
 }
 
 .progress{
@@ -898,6 +945,13 @@ border: 2px solid #0470FF;
   width : 0;
   transition: all ease 0.5s;
 }
+
+.circleSkills{
+  height: 8rem;
+  width: 8rem;
+  padding : 1rem 
+}
+
 
 .languages{
   margin: 3rem;
