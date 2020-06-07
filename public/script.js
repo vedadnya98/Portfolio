@@ -11,10 +11,11 @@
 //         })
 //     })
 //   });
-$(document).ready(function() {
+
+$(document).ready(async function() {
     $('.progress .progress-bar').css("width",
-              function() {
+              async function() {
                   return $(this).attr("aria-valuenow") + "%";
               }
-      )
+     )
   });

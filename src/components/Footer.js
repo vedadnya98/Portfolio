@@ -4,14 +4,70 @@ import '../App.css'
 const Footer = () => {
 	return (
 			<div>
-				<nav className="footer">
-				<div className="btn-toolbar footerToolbar" id="navbarSupportedContent">
-						<a href="https://www.instagram.com/vedadnya_98/"><img className="navImgBig" src="https://en.instagram-brand.com/wp-content/themes/ig-branding/prj-ig-branding/assets/images/ig-logo-black.svg"/></a>
-						<a href="https://www.linkedin.com/in/vedadnya-jadhav-96bba6152/"><img className="navImgBig" src="https://www.pngkit.com/png/full/20-201634_linkedin-square-logo-comments-linkedin-icon-black-png.png"/></a>
-						<a href="https://github.com/vedadnya98"><img className="navImg" src="https://image.flaticon.com/icons/png/512/25/25231.png"/></a>
-						<a href="https://www.facebook.com/vedadnya.jadhav"><img className="navImg" src="https://firebasestorage.googleapis.com/v0/b/protfolio-5907e.appspot.com/o/facebook.png?alt=media&token=e76be100-e5d0-4108-8190-a0657431aa4b"/></a>
+				<div className="footer">
+				<div>
+				<img className="footer-brand" src="http://www.brandgradients.com/img/logos/vue-js-hex-colors-gradient-logo.png" alt="Logo"/>
 				</div>
-				</nav>
+				<br></br>
+				<div className="quotationUp">“</div>
+				<div className="footerQuote">
+				Code is like humor. When you have to explain it, it’s bad.
+				</div>
+				<div className="quotationDown">”</div>
+				<br></br>
+						<div className="icons">
+							<a href="https://www.linkedin.com/in/vedadnya-jadhav-96bba6152/">
+								<div className="layer">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span className="fab fa-linkedin-in"></span>
+								</div>
+								<span className="text">LinkedIn</span>
+							</a>
+							<a href="https://github.com/vedadnya98">
+								<div className="layer">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span className="fab fa-github"></span>
+								</div>
+								<span className="text">Github</span>
+							</a>
+							<a href="https://www.instagram.com/vedadnya_98/">
+								<div className="layer">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span className="fab fa-instagram"></span>
+								</div>
+								<span className="text">Instagram</span>
+							</a>
+							<a href="https://www.facebook.com/vedadnya.jadhav">
+								<div className="layer">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span className="fab fa-facebook-f"></span>
+								</div>
+								<span className="text">Facebook</span>
+							</a>
+							<a href="/#" type="button" data-toggle="modal" data-target="#resumeLong">
+								<div className="layer">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span className="fab"><img src="https://img.icons8.com/ios-glyphs/50/000000/resume.png" alt="resumeLogo"/></span>
+								</div>
+								<span className="text">Resume</span>
+							</a>
+						</div>
+				</div>
 			</div>
 )};
 

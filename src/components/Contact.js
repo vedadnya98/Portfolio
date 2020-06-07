@@ -1,9 +1,49 @@
-import React from 'react';
+import React ,  {useState} from 'react';
 import '../App.css'
-import mail from '../imgs/mail.png'
+import axios from 'axios'
+import mail from '../imgs/mail.svg'
 
 const Contact = () => {
+    const [formSubmit,setFormSubmit] = useState(false);
+    const handleForm = async (event) => {
+		event.preventDefault();
+		//get all elements from form
+		let { name, email, subject, message} = event.target.elements;
+        let d = new Date();
+		let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		let month = months[d.getMonth()];
+		let year = d.getFullYear();
+		let day = d.getDate();
+		let contactDate = day + ' ' + month + ' ' + year;
+        let contactTime = d.getHours() + ':' + (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
+
+        axios({
+            method: "POST", 
+            url:"http://vedadnya-contact-server.herokuapp.com/send", 
+            data: {
+                name : name.value,
+                email : email.value,
+                subject : subject.value,
+                message : message.value,
+                contactDate : contactDate,
+                contactTime : contactTime
+            }
+        }
+        ).then((response)=>{
+            console.log(response)
+            if (response.status === 200){
+                console.log("Message sent 2")
+                alert("Message Sent.");
+                document.getElementById('contact-form').reset();
+                setFormSubmit(!formSubmit)
+            }else if(response.data.msg === 'fail'){
+                alert("Message failed to send.")
+            }
+        })
+    };
+
                 return(
+                    <div className="background">
                         <div>
                             <div className="sectionTitle">
                             <p>Contact</p>
@@ -14,13 +54,13 @@ const Contact = () => {
                             <br></br>
                             <div className="contact container">
                                 <div className="row">
-                                <div className="col-sm-0 col-md-3 col-lg-6 contactImageDiv">
-                                    <img src={mail}></img>
+                                <div className="col-sm-0 col-md-0 col-lg-6 contactImageDiv">
+                                    <img src={mail} alt="mailLogo"></img>
                                 </div>
-                                <div className="col-sm-12 col-md-9 col-lg-6 contactFormDiv">
+                                <div className="col-sm-12 col-md-12 col-lg-6 contactFormDiv">
                                     
 
-                                <form>
+                                <form onSubmit={handleForm} id="contact-form" name="contact-form">
 								<div className='form-group'>
 									<label htmlFor="name">Name</label>
 									<input className='form-control' name='name' id='name'  placeholder='Name' required />
@@ -37,9 +77,11 @@ const Contact = () => {
 									<label htmlFor="message">Message</label>
 									<textarea className='form-control' name='message' id='message'  rows="10" cols="5" placeholder='message' required />
 									<br></br>
-								
-									<button variant="primary" type='submit' className="btnContact"> Send </button>
-
+                                    {formSubmit ? (
+                                    <div className=" form-group col-lg-6 col-sm-12 " role="alert">
+                                        <p className="alert alert-primary">Thank you for your message!</p>
+                                    </div>):(null)}
+                                    <button type="submit" className="btnContact">Submit</button>
                                 </div>
 
 							</form>
@@ -48,7 +90,9 @@ const Contact = () => {
                             </div>
                         </div>
                         </div>
+                        </div>
                       )
+                      
                 }
 
 export default Contact;

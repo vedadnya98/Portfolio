@@ -15,20 +15,23 @@ import FloatingActiveButton from './FloatingActiveButton'
 const Home = () => {
 
 return(
+    <div className="background">
     <div className="home">
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     <div className="profilePicture">
-        <img className="profileImg bottom" src={profile} />
-        <img className="profileImg top" src={profileBeard} />
+        <img className="profileImg bottom" src={profile} alt="profileNoBeard"/>
+        <img className="profileImg top" src={profileBeard} alt="profileBeard"/>
     </div>
     <div className="container introName">
-        <h1> Hi , I'm &lt;Vedadnya/&gt;</h1>
         <br></br>
-        <h6>
-        I'm a graduate student at Stevens Institute of Technology
-        </h6>
-        <h6>
-        I took my first step by choosing Computer Science as a subject for my Higher Secondary School Classes. This subject gave me a comprehensive overview of the basics of Computers. The knowledge acquired in this duration prepared me for my further undergraduate degree. I went on to secure my Bachelor’s Degree from SIES GST (Mumbai) in Computer Sciences. My course was instrumental in showcasing the wondrous new avenues in Computer Sciences
-        </h6>
+        <div className="fullName">
+        <div className="im">&nbsp;I'm ,</div>
+        <div className="myName">&lt;Vedadnya Jadhav/><div className="blink_me">_</div></div>
+        </div>
+        <br></br>
         <h6>
         I have explored the world of Full Stack Development for quite a while , enough for me to say it has turned into a passion for me now . I have extensively researched courses that cater to my passion, and I believe that Master in Computer Science course at the Stevens Institute of Technology is ideally suited to my academic and professional ambitions and it  is proven to be right until now . I am confident that my experience and dedication will enable me to excel at my career.
         </h6>
@@ -36,16 +39,28 @@ return(
         <br></br>
         <br></br>
     </div>
+
     <div className="container vectorDiv">
-        <img className="vectorImg" src={vector}/>
+        <img className="vectorImg" src={vector} alt="vectorImg"/>
     </div>
     <FloatingActiveButton/>
-    <Projects id="projects"/>
-    <Education id="education"/>
-    <Experience id="experience"/>
-    <Skills id="skills"/>
-    <Contact id="contact"/>
+    <div id="projects">
+        <Projects/>
+    </div>
+    <div id="experience">
+        <Experience/>
+    </div>
+    <div id="education">
+        <Education/>
+    </div>
+    <div id="skills">
+        <Skills/>
+    </div>
+    <div id="contact">
+        <Contact/>
+    </div>
     <Footer/>
+    </div>
     </div>
 )
 }

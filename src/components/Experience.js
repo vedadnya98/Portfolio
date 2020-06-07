@@ -1,6 +1,7 @@
 import React , {useState , useEffect} from 'react';
 import '../App.css'
-const data = require('./data')
+import 'firebase/firestore';
+import { getExperience } from '../firebase/FirestoreFunctions'
 
 const Experience = () => {
     const [experience  , setExperience] = useState();
@@ -8,8 +9,8 @@ const Experience = () => {
     useEffect(() => {
 		async function getData() {
 			try {
-                let experienceList = data.Experience
-                console.log(experienceList)
+                let experienceObj = await getExperience();
+                let experienceList = experienceObj['Experience']
 				setExperience(experienceList);
 				setLoading(false)
 			} catch (e) {
@@ -20,6 +21,7 @@ const Experience = () => {
     }, [])
     if(!loading){
                 return(
+                    <div className="background">
                         <div className="experience">
                             <div className="sectionTitle">
                             <p>Experience</p>
@@ -35,14 +37,14 @@ const Experience = () => {
                             return ( 
                                 <div key={i+"Experience"}>
                                 <div className="row">
-                                <div className="col-sm-3 col-md-3 col-lg-3 expImageDiv">
-                                    <img className="expImage" src={item.img}></img>
+                                <div className="col-12 col-sm-3 col-md-3 col-lg-3 expImageDiv">
+                                    <img className="expImage" src={item.img} alt="expLogo"></img>
                                 </div>
-                                <div className="col-sm-9 col-md-9 col-lg-9 expTextDiv">
-                                        <h3 class="card-caption expText">{item.position}</h3>
-                                        <h4 class="card-caption expText">{item.company}</h4>
-                                        <h6 class="category text-muted expText">{item.address}</h6>
-                                        <p class="gpa expText">{item.tenure}</p>
+                                <div className="col-12 col-sm-9 col-md-9 col-lg-9 expTextDiv">
+                                        <h3 className="card-caption expText">{item.position}</h3>
+                                        <h4 className="card-caption expText">{item.company}</h4>
+                                        <h6 className="category text-muted expText">{item.address}</h6>
+                                        <p className="gpa expText">{item.tenure}</p>
                                         <br></br>
                                         {item.description ? item.description.map((des , d) => {
                                             return (
@@ -58,14 +60,14 @@ const Experience = () => {
                                         return(
                                             <div key={i+"Experience"}>
                                 <div className="row">
-                                <div className="col-sm-3 col-md-3 col-lg-3 expImageDiv">
-                                    <img className="expImage" src={item.img}></img>
+                                <div className="col-12 col-sm-3 col-md-3 col-lg-3 expImageDiv">
+                                    <img className="expImage" src={item.img} alt="expLogo"></img>
                                 </div>
-                                <div className="col-sm-9 col-md-9 col-lg-9 expTextDivLast">
-                                        <h3 class="card-caption expText">{item.position}</h3>
-                                        <h4 class="card-caption expText">{item.company}</h4>
-                                        <h6 class="category text-muted expText">{item.address}</h6>
-                                        <p class="gpa expText">{item.tenure}</p>
+                                <div className="col-12 col-sm-9 col-md-9 col-lg-9 expTextDivLast">
+                                        <h3 className="card-caption expText">{item.position}</h3>
+                                        <h4 className="card-caption expText">{item.company}</h4>
+                                        <h6 className="category text-muted expText">{item.address}</h6>
+                                        <p className="gpa expText">{item.tenure}</p>
                                         <br></br>
                                         {item.description ? item.description.map((des , d) => {
                                             return (
@@ -79,6 +81,7 @@ const Experience = () => {
                                     )
                                     }}):<p></p>}
 
+                            </div>
                             </div>
                             </div>
                       )
