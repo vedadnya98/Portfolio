@@ -7,6 +7,10 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  text-align: center;
+}
+
 .App {
   font-family: 'Manrope', sans-serif;
   text-align: center;
@@ -61,14 +65,26 @@ html{
 .footer{
   background-image: url(https://i.ya-webdesign.com/images/blue-abstract-background-png-1.png);
   width: 100%;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #0470FF;
   place-items: center;
   align-items: center !important;
   align-content: center !important;
   display: grid;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.footer p{
+  color : #FFFFFF;
+  font-weight: 300;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+.footer p span{
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
 }
 
 .footerQuote{
@@ -837,6 +853,19 @@ border: 2px solid #0470FF;
   font-family: 'Muli', sans-serif;
 }
 
+@media (max-width: 576px){
+  .expTextDiv,.expTextDivLast{
+    margin-top: 2rem ;
+  }
+  .expTextDiv h3 , h4 , h5 , h6{
+    text-align: center !important;
+  }
+  .expTextDivLast h3 , h4 , h5 , h6{
+    align-items : flex-start;
+    text-align: center !important;
+  }
+}
+
 .expTextDiv{
   align-items : flex-start;
   text-align: left;
@@ -848,9 +877,6 @@ border: 2px solid #0470FF;
   text-align: left;
 }
 
-.expText{
-  text-align: left;
-}
 
 .expImage{
   display: block;
@@ -881,6 +907,7 @@ border: 2px solid #0470FF;
 }
 
 .skillItem:hover{
+  margin-left : -1rem;
   transform-origin: center center;
   transform: scale(1.2);
 }
@@ -1045,15 +1072,12 @@ border-bottom: 2px solid #0470FF;
 
 .contactImageDiv img{
   align-self: center !important;
-  padding: 0%;
+  padding-left: 5%;
   width: auto;
+  transform: scale(2);
+  transform-origin: center center;
   vertical-align: middle !important;
   display: table-cell;
-}
-
-.contactImageDiv img{
-  width: 100%;
-  vertical-align: middle !important;
 }
 
 .form-group label{

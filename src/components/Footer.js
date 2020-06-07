@@ -67,6 +67,11 @@ const Footer = () => {
 								<span className="text">Resume</span>
 							</a>
 						</div>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<p>Designed & Developed By<br></br><span>VedadnyA JadhaV</span></p>
 				</div>
 			</div>
 )};

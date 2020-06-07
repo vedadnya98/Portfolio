@@ -43,8 +43,8 @@ const Experience = () => {
                                 <div className="col-12 col-sm-9 col-md-9 col-lg-9 expTextDiv">
                                         <h3 className="card-caption expText">{item.position}</h3>
                                         <h4 className="card-caption expText">{item.company}</h4>
-                                        <h6 className="category text-muted expText">{item.address}</h6>
-                                        <p className="gpa expText">{item.tenure}</p>
+                                        <h5 className="category text-muted expText">{item.address}</h5>
+                                        <h6 className="gpa expText">{item.tenure}</h6>
                                         <br></br>
                                         {item.description ? item.description.map((des , d) => {
                                             return (
