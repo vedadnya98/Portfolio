@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/vedadnya-jadhav-portfolio/static/css/main.4d290c35.chunk.css",
-    "main.js": "/vedadnya-jadhav-portfolio/static/js/main.566581b4.chunk.js",
-    "main.js.map": "/vedadnya-jadhav-portfolio/static/js/main.566581b4.chunk.js.map",
-    "runtime-main.js": "/vedadnya-jadhav-portfolio/static/js/runtime-main.c6696f54.js",
-    "runtime-main.js.map": "/vedadnya-jadhav-portfolio/static/js/runtime-main.c6696f54.js.map",
-    "static/js/2.d6e3932e.chunk.js": "/vedadnya-jadhav-portfolio/static/js/2.d6e3932e.chunk.js",
-    "static/js/2.d6e3932e.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/2.d6e3932e.chunk.js.map",
+    "main.css": "/vedadnya-jadhav-portfolio/static/css/main.0f766316.chunk.css",
+    "main.js": "/vedadnya-jadhav-portfolio/static/js/main.7c4a301d.chunk.js",
+    "main.js.map": "/vedadnya-jadhav-portfolio/static/js/main.7c4a301d.chunk.js.map",
+    "runtime-main.js": "/vedadnya-jadhav-portfolio/static/js/runtime-main.726315bc.js",
+    "runtime-main.js.map": "/vedadnya-jadhav-portfolio/static/js/runtime-main.726315bc.js.map",
+    "static/css/2.f524894f.chunk.css": "/vedadnya-jadhav-portfolio/static/css/2.f524894f.chunk.css",
+    "static/js/2.7bb133cd.chunk.js": "/vedadnya-jadhav-portfolio/static/js/2.7bb133cd.chunk.js",
+    "static/js/2.7bb133cd.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/2.7bb133cd.chunk.js.map",
     "static/js/3.615596b7.chunk.js": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js",
     "static/js/3.615596b7.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js.map",
-    "static/js/4.1d624753.chunk.js": "/vedadnya-jadhav-portfolio/static/js/4.1d624753.chunk.js",
-    "static/js/4.1d624753.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/4.1d624753.chunk.js.map",
-    "static/js/5.65ced9d3.chunk.js": "/vedadnya-jadhav-portfolio/static/js/5.65ced9d3.chunk.js",
-    "static/js/5.65ced9d3.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/5.65ced9d3.chunk.js.map",
+    "static/js/4.34fedb15.chunk.js": "/vedadnya-jadhav-portfolio/static/js/4.34fedb15.chunk.js",
+    "static/js/4.34fedb15.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/4.34fedb15.chunk.js.map",
+    "static/js/5.13d62367.chunk.js": "/vedadnya-jadhav-portfolio/static/js/5.13d62367.chunk.js",
+    "static/js/5.13d62367.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/5.13d62367.chunk.js.map",
     "index.html": "/vedadnya-jadhav-portfolio/index.html",
-    "precache-manifest.2b65d1e12fc489f9ae188e661338bea6.js": "/vedadnya-jadhav-portfolio/precache-manifest.2b65d1e12fc489f9ae188e661338bea6.js",
+    "precache-manifest.6a753291757cac9f676f88de557db2d4.js": "/vedadnya-jadhav-portfolio/precache-manifest.6a753291757cac9f676f88de557db2d4.js",
     "service-worker.js": "/vedadnya-jadhav-portfolio/service-worker.js",
-    "static/css/main.4d290c35.chunk.css.map": "/vedadnya-jadhav-portfolio/static/css/main.4d290c35.chunk.css.map",
-    "static/js/2.d6e3932e.chunk.js.LICENSE.txt": "/vedadnya-jadhav-portfolio/static/js/2.d6e3932e.chunk.js.LICENSE.txt",
+    "static/css/2.f524894f.chunk.css.map": "/vedadnya-jadhav-portfolio/static/css/2.f524894f.chunk.css.map",
+    "static/css/main.0f766316.chunk.css.map": "/vedadnya-jadhav-portfolio/static/css/main.0f766316.chunk.css.map",
+    "static/js/2.7bb133cd.chunk.js.LICENSE.txt": "/vedadnya-jadhav-portfolio/static/js/2.7bb133cd.chunk.js.LICENSE.txt",
     "static/js/3.615596b7.chunk.js.LICENSE.txt": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js.LICENSE.txt",
     "static/media/Resume.pdf": "/vedadnya-jadhav-portfolio/static/media/Resume.f3c94bce.pdf",
     "static/media/mail.svg": "/vedadnya-jadhav-portfolio/static/media/mail.4391d1a2.svg",
@@ -26,9 +28,9 @@
     "static/media/vectorLight.png": "/vedadnya-jadhav-portfolio/static/media/vectorLight.50b8f645.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c6696f54.js",
+    "static/js/runtime-main.726315bc.js",
     "static/js/3.615596b7.chunk.js",
-    "static/css/main.4d290c35.chunk.css",
-    "static/js/main.566581b4.chunk.js"
+    "static/css/main.0f766316.chunk.css",
+    "static/js/main.7c4a301d.chunk.js"
   ]
 }

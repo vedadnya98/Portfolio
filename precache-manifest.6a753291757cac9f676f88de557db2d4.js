@@ -1,19 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "abb8c45f3a293dab27e8873e5e7e7533",
+    "revision": "14024eeef9e2f7fad806aa88970d3ec9",
     "url": "/vedadnya-jadhav-portfolio/index.html"
   },
   {
-    "revision": "4dbf1663621c9cd94c60",
-    "url": "/vedadnya-jadhav-portfolio/static/css/main.4d290c35.chunk.css"
+    "revision": "5ec0bb0c523044a3f22a",
+    "url": "/vedadnya-jadhav-portfolio/static/css/2.f524894f.chunk.css"
   },
   {
-    "revision": "5805fcaa7587a22a36c8",
-    "url": "/vedadnya-jadhav-portfolio/static/js/2.d6e3932e.chunk.js"
+    "revision": "9f05dcb21d637b7ac265",
+    "url": "/vedadnya-jadhav-portfolio/static/css/main.0f766316.chunk.css"
+  },
+  {
+    "revision": "5ec0bb0c523044a3f22a",
+    "url": "/vedadnya-jadhav-portfolio/static/js/2.7bb133cd.chunk.js"
   },
   {
     "revision": "4e2c02fcb88b596eaa92de7b97a0e735",
-    "url": "/vedadnya-jadhav-portfolio/static/js/2.d6e3932e.chunk.js.LICENSE.txt"
+    "url": "/vedadnya-jadhav-portfolio/static/js/2.7bb133cd.chunk.js.LICENSE.txt"
   },
   {
     "revision": "fa692d90f96339fc10ab",
@@ -24,20 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "35c8da18206d688d2a8b",
-    "url": "/vedadnya-jadhav-portfolio/static/js/4.1d624753.chunk.js"
+    "revision": "90878b2e0c69f3322ecd",
+    "url": "/vedadnya-jadhav-portfolio/static/js/4.34fedb15.chunk.js"
   },
   {
-    "revision": "39391d0d2da6a212ce75",
-    "url": "/vedadnya-jadhav-portfolio/static/js/5.65ced9d3.chunk.js"
+    "revision": "f9c4edc2ef7264ed86ef",
+    "url": "/vedadnya-jadhav-portfolio/static/js/5.13d62367.chunk.js"
   },
   {
-    "revision": "4dbf1663621c9cd94c60",
-    "url": "/vedadnya-jadhav-portfolio/static/js/main.566581b4.chunk.js"
+    "revision": "9f05dcb21d637b7ac265",
+    "url": "/vedadnya-jadhav-portfolio/static/js/main.7c4a301d.chunk.js"
   },
   {
-    "revision": "25cc55d62ec0096df0c6",
-    "url": "/vedadnya-jadhav-portfolio/static/js/runtime-main.c6696f54.js"
+    "revision": "bad3154bc1c7c62c4129",
+    "url": "/vedadnya-jadhav-portfolio/static/js/runtime-main.726315bc.js"
   },
   {
     "revision": "f3c94bcea82a053ce7061a6b94fc648b",
