@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/vedadnya-jadhav-portfolio/static/css/main.0f766316.chunk.css",
+    "main.css": "/vedadnya-jadhav-portfolio/static/css/main.30e44e24.chunk.css",
     "main.js": "/vedadnya-jadhav-portfolio/static/js/main.7c4a301d.chunk.js",
     "main.js.map": "/vedadnya-jadhav-portfolio/static/js/main.7c4a301d.chunk.js.map",
-    "runtime-main.js": "/vedadnya-jadhav-portfolio/static/js/runtime-main.26ad8e5e.js",
-    "runtime-main.js.map": "/vedadnya-jadhav-portfolio/static/js/runtime-main.26ad8e5e.js.map",
+    "runtime-main.js": "/vedadnya-jadhav-portfolio/static/js/runtime-main.338389ce.js",
+    "runtime-main.js.map": "/vedadnya-jadhav-portfolio/static/js/runtime-main.338389ce.js.map",
     "static/css/2.f524894f.chunk.css": "/vedadnya-jadhav-portfolio/static/css/2.f524894f.chunk.css",
     "static/js/2.7bb133cd.chunk.js": "/vedadnya-jadhav-portfolio/static/js/2.7bb133cd.chunk.js",
     "static/js/2.7bb133cd.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/2.7bb133cd.chunk.js.map",
     "static/js/3.615596b7.chunk.js": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js",
     "static/js/3.615596b7.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js.map",
-    "static/js/4.66484d4f.chunk.js": "/vedadnya-jadhav-portfolio/static/js/4.66484d4f.chunk.js",
-    "static/js/4.66484d4f.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/4.66484d4f.chunk.js.map",
-    "static/js/5.4c831e3a.chunk.js": "/vedadnya-jadhav-portfolio/static/js/5.4c831e3a.chunk.js",
-    "static/js/5.4c831e3a.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/5.4c831e3a.chunk.js.map",
+    "static/js/4.7b084bc1.chunk.js": "/vedadnya-jadhav-portfolio/static/js/4.7b084bc1.chunk.js",
+    "static/js/4.7b084bc1.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/4.7b084bc1.chunk.js.map",
+    "static/js/5.392c882a.chunk.js": "/vedadnya-jadhav-portfolio/static/js/5.392c882a.chunk.js",
+    "static/js/5.392c882a.chunk.js.map": "/vedadnya-jadhav-portfolio/static/js/5.392c882a.chunk.js.map",
     "index.html": "/vedadnya-jadhav-portfolio/index.html",
-    "precache-manifest.11536adc07c354b127513184102ced20.js": "/vedadnya-jadhav-portfolio/precache-manifest.11536adc07c354b127513184102ced20.js",
+    "precache-manifest.ce98b7b79f3423fd29dd3d70e886b449.js": "/vedadnya-jadhav-portfolio/precache-manifest.ce98b7b79f3423fd29dd3d70e886b449.js",
     "service-worker.js": "/vedadnya-jadhav-portfolio/service-worker.js",
     "static/css/2.f524894f.chunk.css.map": "/vedadnya-jadhav-portfolio/static/css/2.f524894f.chunk.css.map",
-    "static/css/main.0f766316.chunk.css.map": "/vedadnya-jadhav-portfolio/static/css/main.0f766316.chunk.css.map",
+    "static/css/main.30e44e24.chunk.css.map": "/vedadnya-jadhav-portfolio/static/css/main.30e44e24.chunk.css.map",
     "static/js/2.7bb133cd.chunk.js.LICENSE.txt": "/vedadnya-jadhav-portfolio/static/js/2.7bb133cd.chunk.js.LICENSE.txt",
     "static/js/3.615596b7.chunk.js.LICENSE.txt": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js.LICENSE.txt",
     "static/media/Resume.pdf": "/vedadnya-jadhav-portfolio/static/media/Resume.f3c94bce.pdf",
@@ -28,9 +28,9 @@
     "static/media/vectorLight.png": "/vedadnya-jadhav-portfolio/static/media/vectorLight.50b8f645.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.26ad8e5e.js",
+    "static/js/runtime-main.338389ce.js",
     "static/js/3.615596b7.chunk.js",
-    "static/css/main.0f766316.chunk.css",
+    "static/css/main.30e44e24.chunk.css",
     "static/js/main.7c4a301d.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "114111528f14677b672cdfbbd687025a",
+    "revision": "2d978fab0b180ffb382274b7d904531f",
     "url": "/vedadnya-jadhav-portfolio/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vedadnya-jadhav-portfolio/static/css/2.f524894f.chunk.css"
   },
   {
-    "revision": "9f05dcb21d637b7ac265",
-    "url": "/vedadnya-jadhav-portfolio/static/css/main.0f766316.chunk.css"
+    "revision": "5b98fb042c33440ba021",
+    "url": "/vedadnya-jadhav-portfolio/static/css/main.30e44e24.chunk.css"
   },
   {
     "revision": "5ec0bb0c523044a3f22a",
@@ -28,20 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "19ed5ba415641f2b8b93",
-    "url": "/vedadnya-jadhav-portfolio/static/js/4.66484d4f.chunk.js"
+    "revision": "33db5e2e981420a04e45",
+    "url": "/vedadnya-jadhav-portfolio/static/js/4.7b084bc1.chunk.js"
   },
   {
-    "revision": "a05612e1792d4def5ca7",
-    "url": "/vedadnya-jadhav-portfolio/static/js/5.4c831e3a.chunk.js"
+    "revision": "0a3f9907174c4e3c9a61",
+    "url": "/vedadnya-jadhav-portfolio/static/js/5.392c882a.chunk.js"
   },
   {
-    "revision": "9f05dcb21d637b7ac265",
+    "revision": "5b98fb042c33440ba021",
     "url": "/vedadnya-jadhav-portfolio/static/js/main.7c4a301d.chunk.js"
   },
   {
-    "revision": "c83a99f5bbef9144af94",
-    "url": "/vedadnya-jadhav-portfolio/static/js/runtime-main.26ad8e5e.js"
+    "revision": "44edd924c7df5a1afc30",
+    "url": "/vedadnya-jadhav-portfolio/static/js/runtime-main.338389ce.js"
   },
   {
     "revision": "f3c94bcea82a053ce7061a6b94fc648b",
