@@ -12,6 +12,7 @@
     "bootstrap": "^4.5.0",
     "firebase": "^7.15.0",
     "firebase-admin": "^8.10.0",
+    "gh-pages": "^3.0.0",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
