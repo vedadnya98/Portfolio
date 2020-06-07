@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14024eeef9e2f7fad806aa88970d3ec9",
+    "revision": "114111528f14677b672cdfbbd687025a",
     "url": "/vedadnya-jadhav-portfolio/index.html"
   },
   {
@@ -28,20 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vedadnya-jadhav-portfolio/static/js/3.615596b7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "90878b2e0c69f3322ecd",
-    "url": "/vedadnya-jadhav-portfolio/static/js/4.34fedb15.chunk.js"
+    "revision": "19ed5ba415641f2b8b93",
+    "url": "/vedadnya-jadhav-portfolio/static/js/4.66484d4f.chunk.js"
   },
   {
-    "revision": "f9c4edc2ef7264ed86ef",
-    "url": "/vedadnya-jadhav-portfolio/static/js/5.13d62367.chunk.js"
+    "revision": "a05612e1792d4def5ca7",
+    "url": "/vedadnya-jadhav-portfolio/static/js/5.4c831e3a.chunk.js"
   },
   {
     "revision": "9f05dcb21d637b7ac265",
     "url": "/vedadnya-jadhav-portfolio/static/js/main.7c4a301d.chunk.js"
   },
   {
-    "revision": "bad3154bc1c7c62c4129",
-    "url": "/vedadnya-jadhav-portfolio/static/js/runtime-main.726315bc.js"
+    "revision": "c83a99f5bbef9144af94",
+    "url": "/vedadnya-jadhav-portfolio/static/js/runtime-main.26ad8e5e.js"
   },
   {
     "revision": "f3c94bcea82a053ce7061a6b94fc648b",
