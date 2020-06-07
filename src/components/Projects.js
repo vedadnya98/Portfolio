@@ -54,8 +54,8 @@ const Projects = () => {
                             <br></br>
                             <br></br>
                             <br></br>
-                            {item.code?(<a href= {item.code} className="btn">Code <i className="fas fa-chevron-circle-right"></i></a>):<p></p>}
-                            {item.live?(<a href= {item.live} className="btn">Visit <i className="fas fa-chevron-circle-right"></i></a>):<p></p>}
+                            {item.code?(<a target="_blank" href= {item.code} className="btn">Code <i className="fas fa-chevron-circle-right"></i></a>):<p></p>}
+                            {item.live?(<a target="_blank" href= {item.live} className="btn">Visit <i className="fas fa-chevron-circle-right"></i></a>):<p></p>}
                             </div>
                             </div>
                         </div>

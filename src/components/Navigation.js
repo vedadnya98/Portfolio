@@ -14,7 +14,7 @@ const Navigation = () => {
 				{/* <div className="icons"> */}
 				<ul className="navbar-nav ml-auto icons">
 							<li className="nav-item">
-							<a href="https://www.linkedin.com/in/vedadnya-jadhav-96bba6152/">
+							<a target="_blank" href="https://www.linkedin.com/in/vedadnya-jadhav-96bba6152/">
 								<div className="layer">
 									<span></span>
 									<span></span>
@@ -22,7 +22,7 @@ const Navigation = () => {
 								</div>
 							</a>
 							</li><li className="nav-item">
-							<a href="https://github.com/vedadnya98">
+							<a target="_blank" href="https://github.com/vedadnya98">
 								<div className="layer">
 									<span></span>
 									<span></span>
@@ -30,7 +30,7 @@ const Navigation = () => {
 								</div>
 							</a>
 							</li><li className="nav-item">
-							<a href="https://www.instagram.com/vedadnya_98/">
+							<a target="_blank" href="https://www.instagram.com/vedadnya_98/">
 								<div className="layer">
 									<span></span>
 									<span></span>
@@ -38,7 +38,7 @@ const Navigation = () => {
 								</div>
 							</a>
 							</li><li className="nav-item">
-							<a href="https://www.facebook.com/vedadnya.jadhav">
+							<a target="_blank" href="https://www.facebook.com/vedadnya.jadhav">
 								<div className="layer">
 									<span></span>
 									<span></span>

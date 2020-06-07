@@ -16,7 +16,7 @@ const Footer = () => {
 				<div className="quotationDown">”</div>
 				<br></br>
 						<div className="icons">
-							<a href="https://www.linkedin.com/in/vedadnya-jadhav-96bba6152/">
+							<a target="_blank" href="https://www.linkedin.com/in/vedadnya-jadhav-96bba6152/">
 								<div className="layer">
 									<span></span>
 									<span></span>
@@ -26,7 +26,7 @@ const Footer = () => {
 								</div>
 								<span className="text">LinkedIn</span>
 							</a>
-							<a href="https://github.com/vedadnya98">
+							<a target="_blank" href="https://github.com/vedadnya98">
 								<div className="layer">
 									<span></span>
 									<span></span>
@@ -36,7 +36,7 @@ const Footer = () => {
 								</div>
 								<span className="text">Github</span>
 							</a>
-							<a href="https://www.instagram.com/vedadnya_98/">
+							<a target="_blank" href="https://www.instagram.com/vedadnya_98/">
 								<div className="layer">
 									<span></span>
 									<span></span>
@@ -46,7 +46,7 @@ const Footer = () => {
 								</div>
 								<span className="text">Instagram</span>
 							</a>
-							<a href="https://www.facebook.com/vedadnya.jadhav">
+							<a target="_blank" href="https://www.facebook.com/vedadnya.jadhav">
 								<div className="layer">
 									<span></span>
 									<span></span>

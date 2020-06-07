@@ -36,11 +36,11 @@ const Education = () => {
                         <div className="container eduContainer col-12 col-sm-12 col-md-6 col-lg-6" key={i+"Education"}>
                             <div className="card card-profile">
                             <div className="card-avatar">
-                                <a href="/#"> <img className="eduImg" src={item.img} alt="collegeLogo"/></a>
+                                <a target="_blank" href="/#"> <img className="eduImg" src={item.img} alt="collegeLogo"/></a>
                             </div>
                             <br></br>
                             <div className="table">
-                            <a href={item.website}><h3 className="card-caption">{item.name}</h3></a>
+                            <a target="_blank" href={item.website}><h3 className="card-caption">{item.name}</h3></a>
                                 <h6 className="category text-muted">{item.address}</h6>
                                 <p className="card-description">{item.course}</p>
                                 <p className="gpa">GPA : {item.gpa}</p>
