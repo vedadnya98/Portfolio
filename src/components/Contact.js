@@ -18,7 +18,7 @@ const Contact = () => {
 
         axios({
             method: "POST", 
-            url:"http://vedadnya-contact-server.herokuapp.com/send", 
+            url:"https://vedadnya-contact-server.herokuapp.com/send", 
             data: {
                 name : name.value,
                 email : email.value,
