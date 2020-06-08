@@ -59,6 +59,7 @@ const Contact = () => {
                                     {formSubmit ? (
                                     <div>
                                     <h1>Thank You</h1>
+                                    <h2>I'll be in touch<br></br>as soon as possible</h2>
                                     </div>)
                                     :
                                     <div>
