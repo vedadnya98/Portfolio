@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 import Resume from '../imgs/Resume.pdf'
-import logo from '../imgs/logoBlack.png'
+import logo from '../imgs/logoBlue.png'
 
 const Navigation = () => {
 	return (
