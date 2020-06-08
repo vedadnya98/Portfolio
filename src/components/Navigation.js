@@ -1,12 +1,13 @@
 import React from 'react';
 import '../App.css'
 import Resume from '../imgs/Resume.pdf'
+import logo from '../imgs/logoBlack.png'
 
 const Navigation = () => {
 	return (
 			<div>
 				<nav className="navbar navbar-expand-lg">
-				<img className="navbar-brand" src="http://www.brandgradients.com/img/logos/vue-js-hex-colors-gradient-logo.png" alt="Logo"/>
+				<img className="navbar-brand" src={logo} alt="Logo"/>
 				<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<i className="fas fa-bars"></i>
 				</button>

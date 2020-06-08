@@ -1,12 +1,13 @@
 import React from 'react';
 import '../App.css'
+import logo from '../imgs/logoBlack.png'
 
 const Footer = () => {
 	return (
 			<div>
 				<div className="footer">
 				<div>
-				<img className="footer-brand" src="http://www.brandgradients.com/img/logos/vue-js-hex-colors-gradient-logo.png" alt="Logo"/>
+				<img className="footer-brand" src={logo} alt="Logo"/>
 				</div>
 				<br></br>
 				<div className="quotationUp">“</div>

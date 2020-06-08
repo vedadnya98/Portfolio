@@ -1,7 +1,6 @@
 import React ,  {useState} from 'react';
 import '../App.css'
 import axios from 'axios'
-import mail from '../imgs/mail.svg'
 
 const Contact = () => {
     const [formSubmit,setFormSubmit] = useState(false);
