@@ -54,8 +54,18 @@ const Contact = () => {
                             <br></br>
                             <div className="contact container">
                                 <div className="row">
-                                <div className="col-sm-0 col-md-0 col-lg-6 contactImageDiv">
-                                    <img src={mail} alt="mailLogo"></img>
+                                <div className="contactLeft col-sm-0 col-md-0 col-lg-6">
+                                    {/* <img src={mail} alt="mailLogo"></img> */}
+                                    {formSubmit ? (
+                                    <div>
+                                    <h1>Thank You</h1>
+                                    </div>)
+                                    :
+                                    <div>
+                                    <h1>Say Hello</h1>
+                                    <h2>I'll be in touch<br></br>as soon as possible</h2>
+                                    </div>}
+
                                 </div>
                                 <div className="col-sm-12 col-md-12 col-lg-6 contactFormDiv">
                                     
@@ -77,10 +87,6 @@ const Contact = () => {
 									<label htmlFor="message">Message</label>
 									<textarea className='form-control' name='message' id='message'  rows="10" cols="5" placeholder='message' required />
 									<br></br>
-                                    {formSubmit ? (
-                                    <div className=" form-group col-lg-6 col-sm-12 " role="alert">
-                                        <p className="alert alert-primary">Thank you for your message!</p>
-                                    </div>):(null)}
                                     <button type="submit" className="btnContact">Submit</button>
                                 </div>
 

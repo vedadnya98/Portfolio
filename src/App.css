@@ -1070,14 +1070,34 @@ border-bottom: 2px solid #0470FF;
   opacity: 1;
 }
 
-.contactImageDiv img{
+.contactLeft{
   align-self: center !important;
-  padding-left: 5%;
-  width: auto;
-  transform: scale(2);
-  transform-origin: center center;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
   vertical-align: middle !important;
-  display: table-cell;
+}
+
+.contactLeft div{
+  background-color: #0470FF;
+  width: inherit;
+  height: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+  vertical-align: middle !important;
+}
+
+.contactLeft div h1{
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contactLeft div h2{
+  color: #FFFFFF;
+  
 }
 
 .form-group label{
