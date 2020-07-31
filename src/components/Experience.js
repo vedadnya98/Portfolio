@@ -11,6 +11,7 @@ const Experience = () => {
 			try {
                 let experienceObj = await getExperience();
                 let experienceList = experienceObj['Experience']
+                experienceList = experienceList.reverse()
 				setExperience(experienceList);
 				setLoading(false)
 			} catch (e) {
